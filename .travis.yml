@@ -32,15 +32,15 @@ install:
 script:
   - echo "NO SYSCONFCPUS"
   - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
-  - rm -rf elm-stuff && rm -rf ~/.elm
+  - rm -rf elm-stuff
   - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
-  - rm -rf elm-stuff && rm -rf ~/.elm
+  - rm -rf elm-stuff
   - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
-  - rm -rf elm-stuff && rm -rf ~/.elm
+  - rm -rf elm-stuff
   - echo "WITH SYSCONFCPUS"
   - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
-  - rm -rf elm-stuff && rm -rf ~/.elm
+  - rm -rf elm-stuff
   - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
-  - rm -rf elm-stuff && rm -rf ~/.elm
+  - rm -rf elm-stuff
   - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
 
