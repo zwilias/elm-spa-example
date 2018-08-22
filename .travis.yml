@@ -31,16 +31,16 @@ install:
 
 script:
   - echo "NO SYSCONFCPUS"
-  - $(npm config get prefix)/bin/elm-old --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
   - rm -rf elm-stuff && rm -rf ~/.elm
-  - $(npm config get prefix)/bin/elm-old --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
   - rm -rf elm-stuff && rm -rf ~/.elm
-  - $(npm config get prefix)/bin/elm-old --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm-old make --optimize src/Main.elm --output=foo.js
   - rm -rf elm-stuff && rm -rf ~/.elm
   - echo "WITH SYSCONFCPUS"
-  - $(npm config get prefix)/bin/elm --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
   - rm -rf elm-stuff && rm -rf ~/.elm
-  - $(npm config get prefix)/bin/elm --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
   - rm -rf elm-stuff && rm -rf ~/.elm
-  - $(npm config get prefix)/bin/elm --optimize src/Main.elm --output=foo.js
+  - $(npm config get prefix)/bin/elm make --optimize src/Main.elm --output=foo.js
 
